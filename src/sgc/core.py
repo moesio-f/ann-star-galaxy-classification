@@ -250,6 +250,10 @@ class Dataset(torch.utils.data.Dataset):
     def label_mapper(self) -> dict:
         return {0: 'Star', 1: 'Galaxy'}
 
+    @property
+    def metadata(self) -> pd.DataFrame:
+        return self._labels.copy()
+
     def __len__(self):
         return len(self._labels)
 

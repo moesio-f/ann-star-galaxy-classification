@@ -161,3 +161,11 @@ cython_debug/
 
 # Custom directories
 **/star-galaxy-dataset/
+
+# Images
+*.jpeg
+*.jpg
+*.png
+
+# Whitelist
+!.github/img/*
